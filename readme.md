@@ -3,7 +3,7 @@
 - [Setting up a Laravel Development](#setting-up-a-laravel-development)
   - [1. CentOS 7 Vagrant box](#1-centos-7-vagrant-box)
   - [2. Installing LAMP stack](#2-installing-lamp-stack)
-    - [2.1. Prerequsitis](#21-prerequsitis)
+    - [2.1. Prerequisites](#21-prerequisites)
     - [2.2. Apache 2.4](#22-apache-24)
       - [Installing Apache 2.4](#installing-apache-24)
       - [Setting up a Firewall](#setting-up-a-firewall)
@@ -86,7 +86,7 @@ ssh root@192.168.0.100 # password: vagrant
 
 ## 2. Installing LAMP stack
 
-### 2.1. Prerequsitis
+### 2.1. Prerequisites
 
 Enable both repositories on your system using the following commands on your CentOS 7 system.
 
@@ -415,3 +415,10 @@ sendmail user@example.com  < ~/email.txt
 ![rainloop test email](/img/Screenshot&#32;from&#32;2019-07-26&#32;00-01-59.png)
 
 ## 7. Samba 4 for File Sharing
+
+```bash
+sudo yum install samba samba-client samba-common
+sudo firewall-cmd --permanent --add-service=samba
+sudo firewall-cmd --reload
+sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak
+```
