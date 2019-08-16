@@ -350,6 +350,7 @@ sudo vi /etc/postfix/main.cf
 ```cf
 home_mailbox = Maildir/ # uncomment
 alias_maps = hash:/etc/aliases, pcre:/etc/aliases.regexp # change this line
+transport_maps = pcre:/etc/postfix/transport_maps
 ```
 
 ```bash
@@ -393,6 +394,7 @@ Access domain `your_vagrant_ipaddress/rainloop/?admin` and authenticate with inf
 
 ![rainloop](/img/Screenshot&#32;from&#32;2019-07-25&#32;23-55-25.png)
 
+Login: localhost
 Access domain `your_vagrant_ipaddress/rainloop/?admin` and authenticate with info `catchall@localhost|12345`
 
 Test send mail
