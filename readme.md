@@ -350,6 +350,7 @@ sudo vi /etc/postfix/main.cf
 ```cf
 home_mailbox = Maildir/ # uncomment
 alias_maps = hash:/etc/aliases, pcre:/etc/aliases.regexp # change this line
+transport_maps = pcre:/etc/postfix/transport_maps
 ```
 
 ```bash
