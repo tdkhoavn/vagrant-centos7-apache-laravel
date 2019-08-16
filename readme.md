@@ -394,6 +394,7 @@ Access domain `your_vagrant_ipaddress/rainloop/?admin` and authenticate with inf
 
 ![rainloop](/img/Screenshot&#32;from&#32;2019-07-25&#32;23-55-25.png)
 
+Login: localhost
 Access domain `your_vagrant_ipaddress/rainloop/?admin` and authenticate with info `catchall@localhost|12345`
 
 Test send mail
