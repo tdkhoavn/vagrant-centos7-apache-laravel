@@ -249,7 +249,7 @@ composer
 
 ```cmd
 yum install -y gcc-c++ make
-curl -sL https://rpm.nodesource.com/setup_10.x | -E bash -
+curl -sL https://rpm.nodesource.com/setup_10.x | bash -
 yum install nodejs
 ```
 
@@ -290,7 +290,7 @@ firewall-cmd --reload
 Make Ungit autostart
 
 ```cmd
-vim /etc/init.d/ungit
+vi /etc/init.d/ungit
 ```
 
 ```ungit
@@ -423,7 +423,7 @@ systemctl restart httpd
 Create a rainloop virtual hosts
 
 ```cmd
-vim /etc/httpd/conf.d/vhosts/rainloop.conf
+vi /etc/httpd/conf.d/vhosts/rainloop.conf
 ```
 
 ```apache
